@@ -28,7 +28,31 @@
     </header>
     <main>
       <div class="container">
-        <!-- Please use only tags without any classes or id's -->
+        <form action="/" method="get">
+
+          <!-- Email form -->
+          <div>
+            <label>Email
+              <input type="email" required />
+            </label>
+          </div>
+
+          <!-- Password form -->
+          <div>
+            <label>Password
+              <input type="password" required />
+            </label>
+          </div>
+
+          <!-- Remember me chckbox form -->
+          <div>
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+
+          <!-- Login button (submit form) -->
+          <input type="submit" value="Login"/>
+        </form>
       </div>
     </main>
     <footer class="page-footer">
