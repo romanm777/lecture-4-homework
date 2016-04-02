@@ -29,11 +29,11 @@
     <main>
       <div class="container">
         <!-- On register form add next fields:
-    - email, required
-    - password, required
-    - confirm password, required
-    - address field
-    - date of register field, date
+
+    -
+    -
+    -
+    -
     - male/female dropdown
     - age number field
     - file field for upload photo
@@ -42,6 +42,89 @@
     - "register", "reset" buttons
 
     All fields shoud be required and have proper validation in browser. -->
+        <form class="col s12" action="/" method="post">
+          <!-- email, required -->
+          <div>
+            <label for="email-field">Email</label>
+            <input type="email" id="email-field" placeholder="Email" required/>
+          </div>
+
+          <!-- password, required -->
+          <div>
+            <label for="pass-field">Password</label>
+            <input type="password" id="pass-field" placeholder="Password" required/>
+          </div>
+
+          <!-- confirm password, required -->
+          <div>
+            <label for="confirm-pass-field">Confirm</label>
+            <input type="password" id="confirm-pass-field" placeholder="Confirm password" required/>
+          </div>
+
+          <!-- address field -->
+          <div>
+            <label for="address-field">Address</label>
+            <input type="text" id="address-field" placeholder="Your address"/>
+          </div>
+
+          <!-- date of register field, date -->
+          <div>
+            <label for="date-of-reg">Data</label>
+            <input type="date" id="date-of-reg"/>
+          </div>
+
+          <!-- male/female dropdown -->
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Select</label>
+          </div>
+
+
+            <!--<label for="sex">Male/female</label>
+            <select name="mf" id="sex">
+              <option value="Male">M</option>
+              <option value="Female">F</option>
+              <option value="Animal">A</option>
+            </select>
+          </div>-->
+
+          <!-- age number field -->
+          <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" min="1" max="100" placeholder="Your age"/>
+          </div>
+
+          <!-- file field for upload photo -->
+          <div>
+            <label for="upload-photo">Your photo</label>
+            <input type="file" id="upload-photo"/>
+          </div>
+
+          <!-- 2 radiobuttons for send/or not send promotional emails -->
+          <div>
+            <label for="spam-on">Send promotional emails</label>
+            <input type="radio" name="spam" id="spam-on"/>
+            <label for="spam-off">Not send promotional emails</label>
+            <input type="radio" name="spam" id="spam-off"/>
+          </div>
+
+          <!-- textarea for adding some bio info -->
+          <div>
+            <label for="bio-info">Biography</label>
+            <input type="text" id="bio-info" placeholder="Your biography"/>
+          </div>
+
+          <!-- register, reset buttons -->
+          <div>
+            <input type="submit" value="Register"/>
+            <input type="reset" value="Reset"/>
+          </div>
+        </form>
       </div>
     </main>
     <footer class="page-footer">
