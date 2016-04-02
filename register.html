@@ -50,19 +50,19 @@
           <!-- address field -->
           <div>
             <label for="address-field">Address</label>
-            <input type="text" id="address-field" placeholder="Your address"/>
+            <input type="text" id="address-field" placeholder="Your address" required/>
           </div>
 
           <!-- date of register field, date -->
           <div>
             <label for="date-of-reg">Data</label>
-            <input type="date" id="date-of-reg"/>
+            <input type="date" id="date-of-reg" required/>
           </div>
 
           <!-- male/female dropdown -->
           <div>
             <label for="sex">Male/female</label>
-            <select class="browser-default" name="mf" id="sex">
+            <select class="browser-default" name="mf" id="sex" required>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Animal">Animal</option>
@@ -72,25 +72,25 @@
           <!-- age number field -->
           <div>
             <label for="age">Age</label>
-            <input type="number" id="age" min="1" max="100" placeholder="Your age"/>
+            <input type="number" id="age" min="1" max="100" placeholder="Your age" required/>
           </div>
 
           <!-- file field for upload photo -->
           <div>
             <label for="upload-photo">Your photo</label>
             <p>
-              <input type="file" id="upload-photo"/>
+              <input type="file" id="upload-photo" required/>
             </p>
           </div>
 
           <!-- 2 radiobuttons for send/or not send promotional emails -->
           <div>
             <p>
-              <input type="radio" name="spam" id="spam-on"/>
+              <input type="radio" name="spam" id="spam-on" required/>
               <label for="spam-on">Send promotional emails</label>
             </p>
             <p>
-              <input type="radio" name="spam" id="spam-off"/>
+              <input type="radio" name="spam" id="spam-off" required/>
               <label for="spam-off">Not send promotional emails</label>
             </p>
           </div>
@@ -98,7 +98,7 @@
           <!-- textarea for adding some bio info -->
           <div>
             <label for="bio-info">Biography</label>
-            <input type="text" id="bio-info" placeholder="Your biography"/>
+            <input type="text" id="bio-info" placeholder="Your biography" required/>
           </div>
 
           <!-- register, reset buttons -->
