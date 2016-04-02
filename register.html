@@ -28,21 +28,7 @@
     </header>
     <main>
       <div class="container">
-        <!-- On register form add next fields:
-
-    -
-    -
-    -
-    -
-    - male/female dropdown
-    - age number field
-    - file field for upload photo
-    - 2 radiobuttons for send/or not send promotional emails
-    - textarea for adding some bio info
-    - "register", "reset" buttons
-
-    All fields shoud be required and have proper validation in browser. -->
-        <form class="col s12" action="/" method="post">
+        <form action="/" method="post">
           <!-- email, required -->
           <div>
             <label for="email-field">Email</label>
@@ -74,24 +60,14 @@
           </div>
 
           <!-- male/female dropdown -->
-          <div class="input-field col s12">
-            <select>
-              <option value="" disabled selected>Choose your option</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
+          <div>
+            <label for="sex">Male/female</label>
+            <select class="browser-default" name="mf" id="sex">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Animal">Animal</option>
             </select>
-            <label>Materialize Select</label>
           </div>
-
-
-            <!--<label for="sex">Male/female</label>
-            <select name="mf" id="sex">
-              <option value="Male">M</option>
-              <option value="Female">F</option>
-              <option value="Animal">A</option>
-            </select>
-          </div>-->
 
           <!-- age number field -->
           <div>
@@ -102,15 +78,21 @@
           <!-- file field for upload photo -->
           <div>
             <label for="upload-photo">Your photo</label>
-            <input type="file" id="upload-photo"/>
+            <p>
+              <input type="file" id="upload-photo"/>
+            </p>
           </div>
 
           <!-- 2 radiobuttons for send/or not send promotional emails -->
           <div>
-            <label for="spam-on">Send promotional emails</label>
-            <input type="radio" name="spam" id="spam-on"/>
-            <label for="spam-off">Not send promotional emails</label>
-            <input type="radio" name="spam" id="spam-off"/>
+            <p>
+              <input type="radio" name="spam" id="spam-on"/>
+              <label for="spam-on">Send promotional emails</label>
+            </p>
+            <p>
+              <input type="radio" name="spam" id="spam-off"/>
+              <label for="spam-off">Not send promotional emails</label>
+            </p>
           </div>
 
           <!-- textarea for adding some bio info -->
